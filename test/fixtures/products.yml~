@@ -9,5 +9,5 @@ one:
 two:
   title: MyString2
   description: MyText2
-  image_url: MyString2.jpeg
+  image_url: https://www.access.com/home/images/default-album/gray-car.png
   price: 9.99

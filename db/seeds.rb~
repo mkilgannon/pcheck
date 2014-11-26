@@ -6,7 +6,7 @@ Product.create(title: "Car",
          Car
  	</p>},
   	image_url: 'Car.png',
-	price: 10000)
+	Price: 10000)
 
 Product.create(title: "Playstation 3",
 	description:
@@ -14,7 +14,7 @@ Product.create(title: "Playstation 3",
          Brand new Playstation 3 with one controller included
  	</p>},
   	image_url: 'ps3.jpg',
-	price: 500)
+	Price: 500)
 
 Product.create(title: "Xbox One",
 	description:
@@ -22,5 +22,5 @@ Product.create(title: "Xbox One",
          Brand new Xbox One with Kinect with one controller included
  	</p>},
   	image_url: 'xbox.jpg',
-	price: 450)
+	Price: 450)
 

@@ -18,7 +18,7 @@
   padding: 10px;
   border-bottom: 2px solid;
   font: small-caps 40px/40px "Times New Roman", serif;
-  color: red;
+  color:black;
   text-align: center;
 
   img {
@@ -28,10 +28,10 @@
 
 #notice {
   color: #000 !important;
-  border: 2px solid red;
+  border: 2px black;
   padding: 1em;
   margin-bottom: 2em;
-  background-color: black;
+  background-color: white;
   font: bold smaller sans-serif;
 }
 #columns {

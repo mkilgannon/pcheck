@@ -1,11 +1,16 @@
 class PricesController < ApplicationController
   before_action :set_price, only: [:show, :edit, :update, :destroy]
+  skip_before_action :authorize, only: [:show]
 
   # GET /prices
   # GET /prices.json
   def index
-    @product = Product.find(params[:product_id])
-    @prices = @product.prices
+    if params[:product_id]
+      @product = Product.find(params[:product_id])
+      @prices = @product.prices
+    else
+      @prices = Price.all
+    end
   end
 
   # GET /prices/1

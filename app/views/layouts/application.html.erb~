@@ -17,7 +17,14 @@
 	<li><a href="/">Home</a></li>
 	<li><a href="/products">Products</a></li>
 	<li><a href="/prices">Prices List</a></li>
-        <%= image_tag(product.image_url) %>
+<% if session[:user_id] %>
+  <br />
+
+  <%= link_to 'Users',    users_path    %><br />
+  <br />
+  <%= button_to 'Logout', logout_path, :method => :delete   %>
+<% end %>
+
     </ul>
   </div>
   <div id="main">

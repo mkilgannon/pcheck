@@ -1,26 +1,17 @@
 #encoding: utf-8
 Product.delete_all
 Product.create(title: "Car",
-	description:
-	%{<p>
-         Car
- 	</p>},
+	description: Car,
   	image_url: 'Car.png',
-	Price: 10000)
+	price: 10000)
 
 Product.create(title: "Playstation 3",
-	description:
-	%{<p>
-         Brand new Playstation 3 with one controller included
- 	</p>},
+	description:  Brand new Playstation 3 with one controller included,
   	image_url: 'ps3.jpg',
-	Price: 500)
+	price: 500)
 
 Product.create(title: "Xbox One",
-	description:
-	%{<p>
-         Brand new Xbox One with Kinect with one controller included
- 	</p>},
+	description:  Brand new Xbox One with Kinect with one controller included,
   	image_url: 'xbox.jpg',
-	Price: 450)
+	price: 450)
 

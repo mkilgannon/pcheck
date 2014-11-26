@@ -1,2 +1,10 @@
-<h1>Admin#index</h1>
-<p>Find me in app/views/admin/index.html.erb</p>
+<h1>Welcome, You are now signed in.</h1>
+Its is <%= Time.now %>
+<br>
+<br>
+<%= link_to 'View Products', products_path %>
+</br>
+</br>
+<br>
+<%= link_to 'View Prices', prices_path %>
+</br>

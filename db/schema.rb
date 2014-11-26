@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141125185507) do
+ActiveRecord::Schema.define(version: 20141126133149) do
 
   create_table "carts", force: true do |t|
     t.datetime "created_at"
@@ -28,11 +28,28 @@ ActiveRecord::Schema.define(version: 20141125185507) do
   add_index "line_items", ["cart_id"], name: "index_line_items_on_cart_id"
   add_index "line_items", ["product_id"], name: "index_line_items_on_product_id"
 
+  create_table "prices", force: true do |t|
+    t.integer  "product_id"
+    t.integer  "year"
+    t.decimal  "price"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "prices", ["product_id"], name: "index_prices_on_product_id"
+
   create_table "products", force: true do |t|
     t.string   "title"
     t.text     "description"
     t.string   "image_url"
     t.decimal  "price",       precision: 8, scale: 2
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", force: true do |t|
+    t.string   "name"
+    t.string   "password_digest"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
